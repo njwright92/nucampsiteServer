@@ -26,9 +26,10 @@ const promotionSchema = new Schema({
         type: String,
         required: true
     }
-}, {
-    timestamps: true
-});
+},
+    {
+        timestamps: true
+    });
 
 const Promotion = mongoose.model('Promotion', promotionSchema);
 

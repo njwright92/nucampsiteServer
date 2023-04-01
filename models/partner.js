@@ -19,25 +19,10 @@ const partnerSchema = new Schema({
         type: Boolean,
         default: false
     },
-    comments: [{
-        rating: {
-            type: Number,
-            min: 1,
-            max: 5,
-            required: true
-        },
-        text: {
-            type: String,
-            required: true
-        },
-        author: {
-            type: String,
-            required: true
-        }
-    }]
-}, {
-    timestamps: true
-});
+},
+    {
+        timestamps: true
+    });
 
 const Partner = mongoose.model('Partner', partnerSchema);
 
