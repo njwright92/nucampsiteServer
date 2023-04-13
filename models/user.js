@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 
 const userSchema = new Schema({
+    facebookId: String,
     admin: {
         type: Boolean,
         default: false
